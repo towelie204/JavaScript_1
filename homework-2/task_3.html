@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+    
+        let a = +prompt('Введите первое число');
+        let b = +prompt('Введите второе число');
+        
+        if (a >= 0 && b >=0) {
+            let subtraction = a - b;
+            alert('разность чисел ' + a + ' и ' + b + ' равна ' + subtraction);
+        } else if (a < 0 && b < 0) {
+            let multiplication = a * b;
+            alert('произведение чисел ' + a + ' и ' + b + ' равно ' + multiplication);
+        } else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+            let sum = a + b;
+            alert('сумма чисел ' + a + ' и ' + b + ' равна ' + sum);
+        } else {
+            alert('в следующий раз введите числа');
+        }
+        
+    </script>
+</body>
+</html>
