@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1 class="name">Molbertov.ru</h1>
+            </div>
+            <button class="basketButton">
+                Корзина <i class="fa fa-chevron-down buttonArrow" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="content">
+            <h1>Каталог</h1>
+            <div class="product product-transformer">
+                <h3>Мольберт трансформер</h3>
+                <img src="img/tr1.jpg" alt="трансформер" width="134" height="200" class="catalog-picture" />
+                <span class="price">7000</span>
+                <button type="button" class="btn addToBasketBtn" data-id="02" data-name="трансформер" data-price="7000">
+                    Купить
+                </button>
+            </div>
+            <div class="product product-lira">
+                <h3>Мольберт лира</h3>
+                <img src="img/lira1.jpg" alt="лира" width="134" height="200" class="catalog-picture" />
+                <span class="price">2000</span>
+                <button type="button" class="btn addToBasketBtn" data-id="01" data-name="лира" data-price="2000">
+                    Купить
+                </button>
+            </div>
+            <div class="product product-hlopushka">
+                <h3>Мольберт хлопушка</h3>
+                <img src="img/hlop1.jpg" alt="хлопушка" width="134" height="200" class="catalog-picture" />
+                <span class="price">2300</span>
+                <button type="button" class="btn addToBasketBtn" data-id="03" data-name="хлопушка" data-price="2300">
+                    Купить
+                </button>
+            </div>
+        </div>
+        <div class="basketWindow hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Цена</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" scope="row">Итого: </th>
+                        <td colspan="3">
+                            <span class="total">0</span>
+                            <i class="fa fa-rub"></i>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="footer">
+            &copy;Все права защищены
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

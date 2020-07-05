@@ -1,0 +1,129 @@
+* {
+    margin: 0 auto;
+    background-color: rgb(44, 43, 43);
+}
+
+.container {
+    max-width: 960px;
+}
+
+.slider {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__item {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+i {
+    color: #777;
+    background-color: rgba(1, 1, 1, 0);
+    font-size: 46px!important;
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    color: rgb(143, 143, 143);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.loading {
+    position: absolute;
+    left: calc(50% - 23px);
+    top: calc(50% - 23px);
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: calc(50% - 23px);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 4%;
+}
+
+.right-arrow {
+    right: 4%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.slider-leftToRightAnimation {
+    animation-name: leftToRight;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes leftToRight {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.slider-rightToLeftAnimation {
+    animation-name: rightToLeft;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes rightToLeft {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.slider-toLeftAnimation {
+    animation-name: toLeft;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes toLeft {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.slider-toRightAnimation {
+    animation-name: toRight;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes toRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
